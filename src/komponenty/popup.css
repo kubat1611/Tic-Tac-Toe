@@ -1,0 +1,50 @@
+.popup{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-inner{
+    position: relative;
+    padding: 32px;
+    width: 100%;
+    max-width: 640px;
+    background-color: white;
+}
+
+.popup-inner .zamknij{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border: none;
+    background-color: white;
+    height: 10%;
+    width: 10%;
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    border-radius: 0.5rem;
+}
+
+.popup-inner .zamknij:hover{
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    animation: powieksz 1.5s infinite;
+}
+
+@keyframes powieksz{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

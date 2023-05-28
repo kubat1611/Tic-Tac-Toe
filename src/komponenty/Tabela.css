@@ -1,0 +1,66 @@
+.tabela{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20rem;
+    font-size: 1.5em;
+    background-color: white;
+    margin: 3rem auto;
+    box-shadow: 0px 0px 8px #777;
+    border-radius: 0.5rem;
+    font-weight: bolder;
+
+}
+
+.wynik{
+    width: 100%;
+    text-align: center;
+    padding: 1.07rem;
+}
+
+.x-wynik{
+    color: red;
+    border-bottom: 5px solid red;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.o-wynik{
+    color: blue;
+    border-bottom: 5px solid blue;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.nieaktywny{
+    border-bottom: 5px solid transparent;
+}
+
+.resetWyniku{
+    border: none;
+    background-color: white;
+    width: 20%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.resetWyniku:hover{
+    background-color: red;
+    color: white;
+    animation: powieksz 1.5s infinite;
+}
+
+
+
+@keyframes powieksz{
+    0%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
