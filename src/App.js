@@ -28,6 +28,7 @@ function App() {
   const [czasPopupu, ustawCzasPopupu] = useState(false);
  
  
+ 
 
   useEffect(() => {
     setTimeout(() => {
@@ -85,8 +86,6 @@ function App() {
     const resetWyniku = () =>{
       ustawWynik({xWynik:0, oWynik:0})
     }
-
-      
 
 
   return (
